@@ -24,8 +24,8 @@ Green Valley Medical Center collects patient data across seven departments but h
 
 - **Cost-per-recovery-point is calculated at the group level** — a department or treatment's average cost divided by its average recovery score — not as a per-patient ratio averaged afterward. Conflating the two would understate genuine cost-efficiency differences between pathways.
 - **Recovery scores are not adjusted for case mix.** Departments and physicians treat patients of differing severity, so a lower score may reflect a sicker patient population rather than weaker care. Every department- and physician-level finding is reported as a pattern flagged for review, not a proven performance gap.
-- **Small cohorts are disclosed, not smoothed over.** Infant (n=2) and Other-gender (n=5) admissions appear in the underlying data for completeness but are excluded from headline findings — too small a sample to support any conclusion.
-- **Cost and outcome don't move together linearly.** High-cost admissions cost 10.6x more than low-cost admissions but the recovery gap between them is only 4.1 points — a pattern that would be lost in a report that only tracked total spend rather than spend against outcome.
+- **Small cohorts are disclosed, not smoothed over.** Infant (n=2) and Other-gender (n=5) admissions appear in the underlying data for completeness but are excluded from headline findings too small a sample to support any conclusion.
+- **Cost and outcome don't move together linearly.** High-cost admissions cost 10.6x more than low-cost admissions but the recovery gap between them is only 4.1 points a pattern that would be lost in a report that only tracked total spend rather than spend against outcome.
 
 ## Dashboard
 
@@ -41,7 +41,7 @@ The workbook contains one interactive executive dashboard with three panel group
 
 ## Technical Build
 
-**Data model:** Single fact table (400 admissions) with two calculated dimension fields added — Age Group (seven life-stage cohorts) and Cost Category (Low / Medium / High) — built and validated in Power Pivot
+**Data model:** Single fact table (400 admissions) with two calculated dimension fields added — Age Group (seven life-stage cohorts) and Cost Category (Low / Medium / High) built and validated in Power Pivot
 
 **Power Pivot / DAX Measures:** Average recovery score, average treatment cost, average stay, and cost-per-recovery-point, each sliceable by department, treatment type, physician, and age cohort
 
